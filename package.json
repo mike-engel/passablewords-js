@@ -1,0 +1,48 @@
+{
+  "name": "passablewords",
+  "version": "0.1.0",
+  "description": "A library to check the strength of a password in a sane way",
+  "main": "index.js",
+  "scripts": {
+    "benchmark": "node benchmarks.js",
+    "test": "mocha tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mike-engel/passablewords-js.git"
+  },
+  "keywords": [
+    "password",
+    "authentication",
+    "validation",
+    "zxcvbn",
+    "security",
+    "requirements"
+  ],
+  "author": "Mike Engel <mike@mike-engel.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mike-engel/passablewords-js/issues"
+  },
+  "homepage": "https://github.com/mike-engel/passablewords-js#readme",
+  "engines": {
+    "node": ">= 4.x"
+  },
+  "dependencies": {
+    "zxcvbn": "^4.4.2"
+  },
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "chai": "^3.5.0",
+    "husky": "^0.13.3",
+    "lint-staged": "^3.4.0",
+    "mocha": "^3.2.0",
+    "prettier": "^0.22.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --single-quote",
+      "git add"
+    ]
+  }
+}
