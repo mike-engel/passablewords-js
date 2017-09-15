@@ -1,5 +1,7 @@
 # passablewords
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mike-engel/passablewords-js.svg)](https://greenkeeper.io/)
+
 `passablewords` is a password validation library which checks a password against a million of
 the most common as well as it's ability to be cracked.
 
